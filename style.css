@@ -25,7 +25,7 @@ main {
 .container {
   margin: 0 auto;
   position: relative;
-  padding: 4.5rem 1rem;
+  padding: 6rem 1rem;
   text-align: center;
   max-width: max-content;
 }
