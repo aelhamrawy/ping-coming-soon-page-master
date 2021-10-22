@@ -125,12 +125,12 @@ footer ul li {
   height: 30px;
   text-align: center;
   vertical-align: middle;
-  color: var(--blue);
   border-radius: 1rem;
   cursor: pointer;
 }
 
-footer ul li a:visited {
+footer ul li a:visited,
+footer ul li a {
   color: var(--blue);
 }
 
@@ -158,11 +158,11 @@ footer p {
   }
 
   .controls * {
-    width: 100% ;
+    width: 100%;
     margin: 0.5rem 0 !important;
   }
 
-  p.error-msg{
+  p.error-msg {
     text-align: center;
   }
 }
