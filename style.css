@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  padding: 4.5rem 1rem;
+  text-align: center;
+  max-width: max-content;
+}
+
+img.logo {
+  width: 75px;
+  height: 23px;
+}
+
+h1 {
+  padding: 2rem 0 1rem 0;
+  color: var(--gray);
+  font-weight: 300;
+  font-size: 2.6rem;
+}
+
+h1 span {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+header p {
+  color: var(--very-dark-blue);
+  font-weight: 300;
+}
+
+.controls {
+  margin: 2rem 0;
+  width: 100%;
+}
+.control {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+}
+
+.control input {
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: 1px solid var(--pale-blue);
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.controls input.error {
+  border-color: var(--light-red);
+}
+
+p.error-msg {
+  display: none;
+  color: var(--light-red);
+  padding: 0.3rem 0 0 1.5rem;
+  text-align: start;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.control input.error ~ p.error-msg {
+  display: block;
+}
+
+.control input::placeholder {
+  color: hsl(224, 53%, 83%);
+}
+
+.controls button {
+  color: #fff;
+  background-color: var(--blue);
+  padding: 1rem 3rem;
+  margin-left: 0.7rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  vertical-align: top;
+}
+.controls button:hover,
+.controls button:active {
+  background-color: hsl(223, 85%, 69%);
+}
+
+.main-img {
+  max-width: 550px;
+  max-height: 350px;
+  margin: 2rem 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.6rem;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--blue);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+footer ul li a:visited {
+  color: var(--blue);
+}
+
+footer ul li:hover,
+footer ul li:active,
+footer ul li:hover a,
+footer ul li:active a {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+footer p {
+  color: var(--gray);
+  font-size: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .main-img {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .controls * {
+    width: 100% ;
+    margin: 0.5rem 0 !important;
+  }
+
+  p.error-msg{
+    text-align: center;
+  }
+}
